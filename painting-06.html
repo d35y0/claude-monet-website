@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="logo.png" sizes="16x16" />
+
+    <title>Claude Monet Gallery</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- The website fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Playfair+Display:wght@600&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts Link For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Link for the Social Media Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- The website JavaScript file -->
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <section class="header-display-painting">
+        <img
+          src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg"
+        />
+
+        <div class="overlay"></div>
+
+        <div class="back-btn">
+          <button id="backButton">
+            <span class="material-symbols-outlined"> arrow_back </span>
+          </button>
+        </div>
+
+        <div class="viewport-content">
+          <div class="painting-heading">
+            <div class="top-heading">
+              <span> Water Lilies </span>
+            </div>
+            <div class="subheading">
+              <span> 1906 </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="nav-section">
+        <nav class="navigation-bar">
+          <a href="index.html">HOME</a>
+          <a href="biography.html">BIOGRAPHY</a>
+          <a href="paintings.html">PAINTINGS</a>
+        </nav>
+      </div>
+
+      <div class="click">
+        <div class="click-content">
+          <span class="close-button" onclick="closeImage()">&times;</span>
+          <img src="" alt="" id="enlarged-image" />
+        </div>
+      </div>
+
+      <section>
+        <figure class="left-content">
+          <img
+            src="https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg"
+            alt="Water Lilies (1906)"
+            class="painting-page-img"
+          />
+          <figcaption><i>Water Lilies</i> (1906) by Claude Monet</figcaption>
+        </figure>
+
+        <div class="right-content">
+          <p class="description">
+            <strong>Title:</strong> Water Lilies<br />
+            <strong>Painter:</strong> Claude Monet<br />
+            <strong>Dimensions:</strong> 35 3/8 x 37 1/16 in<br />
+            <strong>Year Produced:</strong> 1906<br />
+            <strong>Physical Description:</strong> Oil on canvas<br />
+            <strong>Location:</strong> The Art Institute of Chicago, USA
+          </p>
+        </div>
+      </section>
+
+      <div class="small-section">
+        <div class="small-section-content">
+          <p>
+            Claude Monet's "Water Lilies" (1906), is a part of the series
+            <i>Water Lilies</i>
+            that is composed of over 250 water lilies paintings. This painting
+            is a part of his third series of these works. In this canvas, which
+            presents a spatial ambiguity, the artist shifted his perspective
+            downward, concentrating solely on the pond's surface. Here, a
+            cluster of vegetation floats amidst reflections of the sky and
+            trees.
+          </p>
+        </div>
+      </div>
+
+      <div onclick="scrollToTop()" class="scroll-top">
+        <span class="material-symbols-outlined"> expand_less </span>
+      </div>
+
+      <section class="footer-section" id="footerSection">
+        <div class="footer-content">
+          <p class="footer-info1">Share the experience</p>
+
+          <div class="social-media-apps">
+            <a href="https://www.instagram.com/">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/en/">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.pinterest.com/">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+
+          <p class="footer-info2">
+            &copy; 2023 Claude Monet Gallery, All Rights Reserved
+          </p>
+
+          <span class="footer-logo">
+            <strong>CLAUDE MONET GALLERY</strong>
+          </span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
